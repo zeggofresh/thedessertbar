@@ -8,7 +8,7 @@ export default function ErrorPage() {
     title: "Page Not Found - The Dessert Bar",
     description: "The page you're looking for doesn't exist. Return to The Dessert Bar homepage to enjoy our premium desserts.",
     keywords: "page not found, 404 error, The Dessert Bar, desserts, homepage",
-    canonical: `${window.location.origin}/404`,
+    canonical: `${window.location.origin}/#/404`,
     image: "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=1200&q=80",
     type: "webpage",
     schema: {
@@ -16,7 +16,7 @@ export default function ErrorPage() {
       "@type": "WebPage",
       "name": "404 Page Not Found - The Dessert Bar",
       "description": "The page you're looking for doesn't exist. Return to The Dessert Bar homepage to enjoy our premium desserts.",
-      "url": window.location.href
+      "url": `${window.location.origin}${window.location.hash || ''}#/404`,
     }
   });
 

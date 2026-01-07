@@ -7,7 +7,7 @@ export default function TermsOfService() {
     title: "Terms of Service - The Dessert Bar",
     description: "Terms of Service for The Dessert Bar. Please read these terms and conditions carefully before using our website or purchasing our desserts.",
     keywords: "terms of service, terms and conditions, website terms, dessert terms, The Dessert Bar terms",
-    canonical: `${window.location.origin}/terms-of-service`,
+    canonical: `${window.location.origin}/#/terms-of-service`,
     image: "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=1200&q=80",
     type: "website",
     schema: {
@@ -15,7 +15,7 @@ export default function TermsOfService() {
       "@type": "WebPage",
       "name": "Terms of Service - The Dessert Bar",
       "description": "Terms of Service for The Dessert Bar. Please read these terms and conditions carefully before using our website or purchasing our desserts.",
-      "url": window.location.href
+      "url": `${window.location.origin}${window.location.hash || ''}#/terms-of-service`,
     }
   });
 

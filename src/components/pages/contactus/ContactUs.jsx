@@ -32,7 +32,7 @@ export default function ContactUs() {
     title: "Contact The Dessert Bar - Premium Desserts & Sweet Delights",
     description: "Get in touch with The Dessert Bar. Reach out for dessert orders, franchise opportunities, or any inquiries about our premium desserts in Sangmner.",
     keywords: "contact The Dessert Bar, dessert orders, franchise opportunities, dessert inquiries, dessert bar Sangmner, order desserts, dessert business",
-    canonical: `${window.location.origin}/contact`,
+    canonical: `${window.location.origin}/#/contact`,
     image: "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=1200&q=80",
     type: "website",
     schema: {
@@ -40,7 +40,7 @@ export default function ContactUs() {
       "@type": "ContactPage",
       "name": "Contact The Dessert Bar",
       "description": "Contact page for The Dessert Bar. Get in touch for dessert orders, franchise opportunities, or any inquiries.",
-      "url": window.location.href,
+      "url": `${window.location.origin}${window.location.hash || ''}#/contact`,
       "telephone": "+918862088631",
       "email": "thedessertbar75@gmail.com",
       "address": {

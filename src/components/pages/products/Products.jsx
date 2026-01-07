@@ -175,10 +175,19 @@ Phone: ${customerPhone}`;
       "Explore our delicious dessert menu at The Dessert Bar. From chocolate brownies to cheesecakes, cupcakes and more. Order fresh desserts in Sangmner.",
     keywords:
       "dessert menu, chocolate brownies, cheesecake, cupcakes, tiramisu, macarons, chocolate lava cake, desserts in Sangmner, order desserts online, fresh desserts, premium desserts",
-    canonical: `${window.location.origin}/products`,
+    canonical: `${window.location.origin}/#/products`,
     image:
       "https://images.unsplash.com/photo-1601972599720-bb64d8e23b67?auto=format&fit=crop&w=1200&q=80",
     type: "website",
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Dessert Menu - Premium Desserts & Sweet Delights | The Dessert Bar",
+      "description": "Explore our delicious dessert menu at The Dessert Bar. From chocolate brownies to cheesecakes, cupcakes and more. Order fresh desserts in Sangmner.",
+      "url": `${window.location.origin}${window.location.hash || ''}#/products`,
+      "dateModified": new Date().toISOString(),
+      "datePublished": "2024-01-01"
+    }
   });
 
   return (

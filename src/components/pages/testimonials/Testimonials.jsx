@@ -86,7 +86,7 @@ export default function Testimonials() {
     title: "Customer Testimonials - The Dessert Bar",
     description: "Read what our customers say about our delicious desserts and excellent service at The Dessert Bar in Sangamner.",
     keywords: "dessert testimonials, customer reviews, dessert bar reviews, customer feedback, dessert experiences, The Dessert Bar customers, Sangamner desserts, Sangamner dessert bar",
-    canonical: `${window.location.origin}/testimonials`,
+    canonical: `${window.location.origin}/#/testimonials`,
     image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=80",
     type: "website",
     schema: {
@@ -94,7 +94,7 @@ export default function Testimonials() {
       "@type": "WebPage",
       "name": "Customer Testimonials - The Dessert Bar",
       "description": "Read what our customers say about our delicious desserts and excellent service.",
-      "url": window.location.href,
+      "url": `${window.location.origin}${window.location.hash || ''}#/testimonials`,
       "dateModified": new Date().toISOString(),
       "datePublished": "2024-01-01"
     }

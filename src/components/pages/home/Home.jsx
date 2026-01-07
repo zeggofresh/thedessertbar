@@ -51,7 +51,7 @@ export default function Home() {
     title: "The Dessert Bar - Premium Desserts & Sweet Delights | Home",
     description: "Indulge in premium desserts at The Dessert Bar. From chocolate brownies to cheesecakes, experience the finest sweet treats crafted with love and premium ingredients in Sangmner.",
     keywords: "desserts, cakes, chocolate, brownies, cheesecake, sweets, bakery, dessert bar, premium desserts, The Dessert Bar Sangmner, homemade desserts, fresh desserts",
-    canonical: `${window.location.origin}/`,
+    canonical: `${window.location.origin}/#/`,
     image: "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=1200&q=80",
     type: "website",
     schema: {
@@ -70,7 +70,7 @@ export default function Home() {
       },
       "openingHours": "Mo,Tu,We,Th,Fr,Sa,Su 10:00-22:00",
       "priceRange": "$$",
-      "url": window.location.href,
+      "url": `${window.location.origin}${window.location.hash || ''}#/`,
       "sameAs": [
         "https://www.instagram.com/thedessertbar",
         "https://www.facebook.com/thedessertbar"

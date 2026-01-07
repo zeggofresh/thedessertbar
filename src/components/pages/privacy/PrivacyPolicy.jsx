@@ -7,7 +7,7 @@ export default function PrivacyPolicy() {
     title: "Privacy Policy - The Dessert Bar",
     description: "Privacy Policy for The Dessert Bar. Learn how we collect, use, and protect your personal information when you visit our website or purchase our desserts.",
     keywords: "privacy policy, data protection, personal information, The Dessert Bar, dessert privacy, website privacy",
-    canonical: `${window.location.origin}/privacy-policy`,
+    canonical: `${window.location.origin}/#/privacy-policy`,
     image: "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=1200&q=80",
     type: "website",
     schema: {
@@ -15,7 +15,7 @@ export default function PrivacyPolicy() {
       "@type": "WebPage",
       "name": "Privacy Policy - The Dessert Bar",
       "description": "Privacy Policy for The Dessert Bar. Learn how we collect, use, and protect your personal information.",
-      "url": window.location.href
+      "url": `${window.location.origin}${window.location.hash || ''}#/privacy-policy`,
     }
   });
 

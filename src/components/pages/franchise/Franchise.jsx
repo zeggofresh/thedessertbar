@@ -7,7 +7,7 @@ export default function Franchise() {
     title: "Franchise Opportunities - The Dessert Bar",
     description: "Start your own dessert business with The Dessert Bar franchise. Join our premium dessert brand and start a profitable sweet business in your area.",
     keywords: "dessert franchise, dessert business opportunity, franchise with The Dessert Bar, dessert franchise in India, dessert business, dessert bar franchise, franchise opportunity",
-    canonical: `${window.location.origin}/franchise`,
+    canonical: `${window.location.origin}/#/franchise`,
     image: "https://images.unsplash.com/photo-1599785209707-1a7de1049b1f?auto=format&fit=crop&w=1200&q=80",
     type: "website",
     schema: {
@@ -15,7 +15,7 @@ export default function Franchise() {
       "@type": "WebPage",
       "name": "Franchise Opportunities - The Dessert Bar",
       "description": "Start your own dessert business with The Dessert Bar franchise. Join our premium dessert brand and start a profitable sweet business in your area.",
-      "url": window.location.href,
+      "url": `${window.location.origin}${window.location.hash || ''}#/franchise`,
       "publisher": {
         "@type": "Organization",
         "name": "The Dessert Bar"

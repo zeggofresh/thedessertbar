@@ -14,7 +14,7 @@ export default function AboutUs() {
     title: "About The Dessert Bar - Premium Desserts in Sangamner & Sweet Delights",
     description: "Learn about The Dessert Bar's story, mission, and vision. Discover how we create premium desserts with love and premium ingredients in Sangamner. Read about our quality promise and meet our dedicated team.",
     keywords: "about The Dessert Bar, dessert story, dessert mission, dessert vision, premium desserts, dessert bar Sangamner, quality desserts, dessert ingredients, dessert artisans, dessert team, dessert company, dessert quality, dessert process",
-    canonical: `${window.location.origin}/about`,
+    canonical: `${window.location.origin}/#/about`,
     image: "https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=1200&q=80",
     type: "website",
     schema: {
@@ -22,7 +22,7 @@ export default function AboutUs() {
       "@type": "AboutPage",
       "name": "About The Dessert Bar",
       "description": "Learn about The Dessert Bar's story, mission, and vision. Discover how we create premium desserts with love and premium ingredients, our quality promise, and meet our dedicated team.",
-      "url": window.location.href,
+      "url": `${window.location.origin}${window.location.hash || ''}#/about`,
       "dateModified": new Date().toISOString(),
       "datePublished": "2024-01-01"
     }
